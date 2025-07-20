@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>AQUA - Tutorial Buscador Archivístico</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: white;
+    }
+
+    .contenido {
+      background-color: rgba(0, 0, 50, 0.75);
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      color: #aee4f8;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: normal;
+      color: #b3e5fc;
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+
+    ol {
+      font-size: 1.2em;
+      padding-left: 20px;
+    }
+
+    ol li {
+      margin: 10px 0;
+    }
+
+    a {
+      color: #8be9ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-top: 60px;
+      padding: 30px;
+      background-color: rgba(0, 100, 150, 0.5);
+      border-radius: 15px;
+    }
+
+    section img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    .leyenda {
+      font-style: italic;
+      color: #cfc2ff;
+      margin-top: -10px;
+      margin-bottom: 15px;
+    }
+
+    .boton {
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .boton:hover {
+      background-color: #008c9e;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+  </style>
+  <script>
+    function buscarArchivo() {
+      alert("Buscando archivos relacionados...");
+    }
+
+    function modificarArchivo() {
+      alert("Editando información del archivo...");
+    }
+
+    function cargarArchivo() {
+      alert("Simulando carga de archivo al sistema...");
+    }
+
+    function descargarArchivo() {
+      alert("Iniciando descarga...");
+    }
+  </script>
+</head>
+<body>
+  <div class="contenido">
+    <h1>AQUA</h1>
+    <h3>Por José Daniel Baquero</h3>
+
+    <p>Bienvenido al buscador de documentos web <strong>AQUA</strong>. Haz clic en los siguientes temas para navegar:</p>
+
+    <ol>
+      <li><a href="#buscador">Buscador de Archivos</a></li>
+      <li><a href="#modificaciones">Modificaciones</a></li>
+      <li><a href="#cargue">Cargue de Archivos</a></li>
+      <li><a href="#descarga">Descarga de Archivos</a></li>
+    </ol>
+
+    <section id="buscador">
+      <h2>Buscador de Archivos</h2>
+      <p class="leyenda">Permite localizar rápidamente archivos dentro del sistema mediante palabras clave o filtros.</p>
+      <p>Usa palabras clave o filtros para encontrar documentos específicos almacenados en el sistema.</p>
+      <button class="boton" onclick="buscarArchivo()">Buscar</button>
+      <img src="https://th-i.thgim.com/public/opinion/lead/4u0yl9/article27109868.ece/alternates/LANDSCAPE_1200/13THiStock-1058320944" alt="Agua - Buscador">
+    </section>
+
+    <section id="modificaciones">
+      <h2>Modificaciones</h2>
+      <p class="leyenda">Se refiere a la edición o actualización de información en archivos ya registrados.</p>
+      <p>Edita los detalles de los archivos: título, etiquetas, descripción o fecha de ingreso.</p>
+      <button class="boton" onclick="modificarArchivo()">Modificar</button>
+      <img src="https://static.vecteezy.com/system/resources/previews/007/401/700/non_2x/modify-word-on-red-keyboard-button-free-photo.jpg" alt="Agua - Modificaciones">
+    </section>
+
+    <section id="cargue">
+      <h2>Cargue de Archivos</h2>
+      <p class="leyenda">Proceso mediante el cual se incorporan nuevos documentos al sistema archivístico.</p>
+      <p>Sube documentos al sistema AQUA desde tu equipo en formatos como PDF, DOCX, JPG, entre otros.</p>
+      <button class="boton" onclick="cargarArchivo()">Cargar</button>
+      <img src="https://img.freepik.com/fotos-premium/cargar-documentos-carpeta-abrir-carpeta-archivos-documentos-blanco-voladores-transferencia-datos-respaldo-f_926199-2625454.jpg" alt="Agua - Cargue">
+    </section>
+
+    <section id="descarga">
+      <h2>Descarga de Archivos</h2>
+      <p class="leyenda">Permite al usuario obtener una copia del archivo desde el sistema a su dispositivo local.</p>
+      <p>Permite bajar los archivos almacenados, garantizando su integridad y formato original.</p>
+      <button class="boton" onclick="descargarArchivo()">Descargar</button>
+      <img src="https://img.freepik.com/premium-vector/download-doc-button-laptop-screen-downloading-document-concept-doc-label-down-arrow-sign_630277-409.jpg" alt="Agua - Descarga">
+    </section>
+
+    <footer>
+      © 2025 José Daniel Baquero · Sistema AQUA - Tutorial educativo. Imágenes de Unsplash.
+    </footer>
+  </div>
+</body>
+</html>
